@@ -3,6 +3,7 @@
 :root {
   --MainColor: #00c9a7;
   --MainColorTransparent: #00c9a715;
+  font-size: 14px;
 }
 
 * {
@@ -127,4 +128,10 @@
   background-color: transparent;
   font-weight: bold;
   background-color: var(--MainColorTransparent);
+}
+
+@media screen and (max-width: 1600px) {
+  .exercise-container {
+    flex-direction: column;
+  }
 }
