@@ -12,7 +12,7 @@
   font-family: "Poppins";
 }
 
-.flexbox-container {
+.grid-container {
   margin: 5rem 10rem;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   gap: 5rem;
 }
 
-.flexbox-title {
+.grid-title {
   font-size: 5rem;
   font-weight: bold;
   color: var(--MainColor);
@@ -88,11 +88,7 @@
   cursor: pointer;
 }
 
-.flex-direction > * {
-  flex-grow: 1;
-}
-
-.flex-element {
+.grid-element {
   background-color: white;
   padding: 1rem;
   display: flex;
@@ -102,14 +98,20 @@
   font-weight: bold;
 }
 
-.flex-element:nth-child(1) {
-  background-color: #99b9e2;
+.grid-element:nth-child(1) {
+  background-color: #ffe9bf;
 }
-.flex-element:nth-child(2) {
-  background-color: #dcb8e0;
+.grid-element:nth-child(2) {
+  background-color: #ffd5c6;
 }
-.flex-element:nth-child(3) {
-  background-color: #fabcd4;
+.grid-element:nth-child(3) {
+  background-color: #ffc5d3;
+}
+.grid-element:nth-child(4) {
+  background-color: #efbee0;
+}
+.grid-element:nth-child(5) {
+  background-color: #cebfe7;
 }
 
 .exercise-button:hover:not(.active) {
@@ -125,36 +127,4 @@
   background-color: transparent;
   font-weight: bold;
   background-color: var(--MainColorTransparent);
-}
-
-.flex-alignment > * {
-  height: 12rem;
-  width: 12rem;
-}
-
-.flex-wrap > * {
-  width: 40%;
-}
-
-.flex-shrink > * {
-  width: 40%;
-}
-
-.flex-shrink > *:first-child {
-  width: 90%;
-}
-
-.flex-grow > * {
-  flex-basis: 0;
-  flex-grow: 1;
-}
-
-.flex-alignself {
-  justify-content: space-around;
-}
-
-.flex-alignself > * {
-  height: 12rem;
-  width: 12rem;
-  align-self: center;
 }
