@@ -16,17 +16,17 @@
     <div class="grid-container">
         <div class="grid-title">Grid</div>
 
-        <!-- Grid Template Column -->
+        <!-- Grid Template Columns -->
         <div class="exercise-container">
             <div class="left-column">
                 <div class="exercise-title">Grid Template Columns</div>
                 <div class="exercise-buttons-container">
-                    <div class="exercise-button active" onclick="clicked(event,'gridTemplateColumns','60px 60px' )">60px 60px</div>
-                    <div class="exercise-button" onclick="clicked(event,'direction-row-reverse')">1fr 60px</div>
-                    <div class="exercise-button" onclick="clicked(event,'direction-column')">1fr 2fr</div>
-                    <div class="exercise-button" onclick="clicked(event,'direction-column-reverse')">1fr 60px 3fr
+                    <div class="exercise-button active" onclick="clicked(event,'gridTemplateColumns','200px 200px' )">200px 200px</div>
+                    <div class="exercise-button" onclick="clicked(event,'gridTemplateColumns','1fr 200px')">1fr 200px</div>
+                    <div class="exercise-button" onclick="clicked(event,'gridTemplateColumns','1fr 2fr')">1fr 2fr</div>
+                    <div class="exercise-button" onclick="clicked(event,'gridTemplateColumns','1fr 60px 3fr')">1fr 60px 3fr
                     </div>
-                    <div class="exercise-button" onclick="clicked(event,'direction-column-reverse')">repeat(4, 1fr)
+                    <div class="exercise-button" onclick="clicked(event,'gridTemplateColumns','repeat(4, 1fr)')">repeat(4, 1fr)
                     </div>
                 </div>
             </div>
@@ -46,12 +46,12 @@
                 <div class="exercise-title">Grid Template Rows</div>
                 <div class="exercise-buttons-container">
                     Justify-content
-                    <div class="exercise-button active" onclick="clicked(event,'justify-center')">Center</div>
-                    <div class="exercise-button" onclick="clicked(event,'justify-flex-start')">Flex-start</div>
-                    <div class="exercise-button" onclick="clicked(event,'justify-flex-end')">Flex-end</div>
-                    <div class="exercise-button" onclick="clicked(event,'justify-space-around')">Space-around</div>
-                    <div class="exercise-button" onclick="clicked(event,'justify-space-between')">Space-between</div>
-                    <div class="exercise-button" onclick="clicked(event,'justify-space-evenly')">Space-evenly</div>
+                    <div class="exercise-button active" onclick="clicked(event,'gridTemplateRows','100px 100px')">100px 100px</div>
+                    <div class="exercise-button" onclick="clicked(event,'gridTemplateRows','100px 200px')">100px 200px</div>
+                    <div class="exercise-button" onclick="clicked(event,'gridTemplateRows','1fr 1fr')">1fr 1fr</div>
+                    <div class="exercise-button" onclick="clicked(event,'gridTemplateRows','repeat(2, 100px)')">repeat(2, 100px)</div>
+                    <div class="exercise-button" onclick="clicked(event,'gridTemplateRows','repeat(2, auto)')">repeat(2, auto)</div>
+                    <div class="exercise-button" onclick="clicked(event,'gridTemplateRows','repeat(2, minmax(100px, auto))')">repeat(2, minmax(100px, auto))</div>
                 </div>
             </div>
             <div class="grid-template-rows display-container">
