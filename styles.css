@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 :root {
-  --MainColor: #ff9671;
+  --MainColor: #00c9a7;
+  --MainColorTransparent: #00c9a715;
 }
 
 * {
@@ -9,4 +10,151 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
+}
+
+.flexbox-container {
+  margin: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.flexbox-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--MainColor);
+}
+
+.exercise-container {
+  width: 100%;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-column {
+  height: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+
+.display-container {
+  flex-basis: 0;
+  flex-grow: 3;
+  background-color: var(--MainColor);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 30rem;
+}
+
+.exercise-title {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--MainColor);
+  flex-direction: column;
+}
+
+.exercise-title > p {
+  font-size: 2rem;
+}
+
+.exercise-buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.exercise-button {
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  background-color: var(--MainColor);
+  color: white;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.flex-direction > * {
+  flex-grow: 1;
+}
+
+.flex-element {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.flex-element:nth-child(1) {
+  background-color: #99b9e2;
+}
+.flex-element:nth-child(2) {
+  background-color: #dcb8e0;
+}
+.flex-element:nth-child(3) {
+  background-color: #fabcd4;
+}
+
+.exercise-button:hover:not(.active) {
+  transform: translate(1.5rem);
+  color: var(--MainColor);
+  font-weight: bold;
+  background-color: var(--MainColorTransparent);
+}
+
+.active {
+  transform: translate(1.5rem);
+  color: var(--MainColor);
+  background-color: transparent;
+  font-weight: bold;
+  background-color: var(--MainColorTransparent);
+}
+
+.flex-alignment > * {
+  height: 12rem;
+  width: 12rem;
+}
+
+.flex-wrap > * {
+  width: 40%;
+}
+
+.flex-shrink > * {
+  width: 40%;
+}
+
+.flex-shrink > *:first-child {
+  width: 90%;
+}
+
+.flex-grow > * {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.flex-alignself {
+  justify-content: space-around;
+}
+
+.flex-alignself > * {
+  height: 12rem;
+  width: 12rem;
+  align-self: center;
 }
