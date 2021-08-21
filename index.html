@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css" />
 
     <script src="./eventHandler.js" defer></script>
-    <title>Flexbox</title>
+    <title>Grid</title>
 </head>
 
 <body>
@@ -21,17 +21,17 @@
             <div class="left-column">
                 <div class="exercise-title">Grid Template Columns</div>
                 <div class="exercise-buttons-container">
-                    <div class="exercise-button active" onclick="clicked(event,'gridTemplateColumns','200px 200px' )">
-                        200px 200px</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridTemplateColumns','1fr 200px')">1fr 200px
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'gridTemplateColumns','1fr 2fr')">1fr 2fr</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridTemplateColumns','1fr 200px 3fr')">1fr
+                    <button class="exercise-button active" onclick="clicked(event,'gridTemplateColumns','200px 200px' )">
+                        200px 200px</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridTemplateColumns','1fr 200px')">1fr 200px
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'gridTemplateColumns','1fr 2fr')">1fr 2fr</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridTemplateColumns','1fr 200px 3fr')">1fr
                         200px 3fr
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'gridTemplateColumns','repeat(4, 1fr)')">
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'gridTemplateColumns','repeat(4, 1fr)')">
                         repeat(4, 1fr)
-                    </div>
+                    </button>
                 </div>
             </div>
             <div class="grid-template-columns display-container">
@@ -49,18 +49,18 @@
             <div class="left-column">
                 <div class="exercise-title">Grid Template Rows</div>
                 <div class="exercise-buttons-container">
-                    <div class="exercise-button active" onclick="clicked(event,'gridTemplateRows','100px 100px')">100px
-                        100px</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridTemplateRows','100px 200px')">100px 200px
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'gridTemplateRows','1fr 1fr')">1fr 1fr</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridTemplateRows','repeat(2, 100px)')">
-                        repeat(2, 100px)</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridTemplateRows','repeat(2, auto)')">repeat(2,
-                        auto)</div>
-                    <div class="exercise-button"
+                    <button class="exercise-button active" onclick="clicked(event,'gridTemplateRows','100px 100px')">100px
+                        100px</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridTemplateRows','100px 200px')">100px 200px
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'gridTemplateRows','1fr 1fr')">1fr 1fr</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridTemplateRows','repeat(2, 100px)')">
+                        repeat(2, 100px)</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridTemplateRows','repeat(2, auto)')">repeat(2,
+                        auto)</button>
+                    <button class="exercise-button"
                         onclick="clicked(event,'gridTemplateRows','repeat(2, minmax(100px, auto))')">repeat(2,
-                        minmax(100px, auto))</div>
+                        minmax(100px, auto))</button>
                 </div>
             </div>
             <div class="grid-template-rows display-container">
@@ -78,14 +78,11 @@
             <div class="left-column">
                 <div class="exercise-title">Grid Auto Rows</div>
                 <div class="exercise-buttons-container">
-                    <div class="exercise-button active" onclick="clicked(event,'gridAutoRows')">2° element margin left
-                        auto
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'gridAutoRows')">3° element margin left auto
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'gridAutoRows')">2° & 3° element margin left
-                        auto
-                    </div>
+                    <button class="exercise-button active" onclick="clicked(event,'gridAutoRows','auto')">auto</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridAutoRows','250px')">250px
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'gridAutoRows','minmax(300px, auto)')">minmax(300px, auto)
+                    </button>
                 </div>
             </div>
             <div class="grid-auto-rows display-container">
@@ -103,9 +100,11 @@
             <div class="left-column">
                 <div class="exercise-title">Grid Auto Columns</div>
                 <div class="exercise-buttons-container">
-                    <div class="exercise-button active" onclick="clicked(event,'gridAutoColumns')">No wrap</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridAutoColumns')">Wrap</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridAutoColumns')">Reverse wrap</div>
+                    <button class="exercise-button active" onclick="clicked(event,'gridAutoColumns','auto')">auto</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridAutoColumns','min-content')">min-content</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridAutoColumns','300px')">300px</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridAutoColumns','40%')">40%</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridAutoColumns','minmax(100px, auto)')">minmax(200px, auto)</button>
                 </div>
             </div>
             <div class="grid-auto-columns display-container">
@@ -123,9 +122,10 @@
             <div class="left-column">
                 <div class="exercise-title">Grid Column</div>
                 <div class="exercise-buttons-container">
-                    <div class="exercise-button active" onclick="clicked(event,'gridColumn')">Flex shrink 0</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridColumn')">Flex shrink 1</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridColumn')">Flex shrink 2</div>
+                    <button class="exercise-button active" onclick="clicked(event,'gridColumn','1 / 2',true)">1 / 2</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridColumn','1 / 3',true)">1 / 3</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridColumn','2 / -1',true)">2 / -1</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridColumn','span 2',true)">span 2</button>
                 </div>
             </div>
             <div class="grid-column display-container">
@@ -141,13 +141,13 @@
         <!-- Grid Row -->
         <div class="exercise-container">
             <div class="left-column">
-                <div class="exercise-title">Grid RowsGrid Rows</p>
+                <div class="exercise-title">Grid Row</p>
                 </div>
                 <div class="exercise-buttons-container">
-                    <div class="exercise-button active" onclick="clicked(event,'gridRow')">Flex grow 0</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridRow')">Flex grow 1</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridRow')">Flex grow 2</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridRow')">Flex grow 3</div>
+                    <button class="exercise-button active" onclick="clicked(event,'gridRow','1 / 2',true)">1 / 2</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridRow','1 / 3',true)">1 / 3</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridRow','2 / 3',true)">2 / 3</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridRow','span 2',true)">span 2</button>
                 </div>
             </div>
             <div class="grid-row display-container">
@@ -165,12 +165,11 @@
             <div class="left-column">
                 <div class="exercise-title">Grid Gap</div>
                 <div class="exercise-buttons-container">
-                    <div class="exercise-button active" onclick="clicked(event,'gridGap')">Flex gap 0 rem</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridGap')">Flex gap 1 rem</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridGap')">Flex gap 2 rem</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridGap')">Flex gap 3 rem</div>
-                    <div class="exercise-button" onclick="clicked(event,'gridGap')">Flex gap 4 rem</div>
-                </div>
+                    <button class="exercise-button active" onclick="clicked(event,'gridGap','0')">gap 0rem</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridGap','1rem')">gap 1rem</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridGap','2rem')">gap 2rem</button>
+                    <button class="exercise-button" onclick="clicked(event,'gridGap','3rem')">gap 3rem</button>
+                </div> 
             </div>
             <div class="grid-gap display-container">
                 <div class="grid-element">1° Element</div>
@@ -188,21 +187,21 @@
                 <div class="exercise-title">Grid Gap Advanced</div>
                 <div class="exercise-buttons-container">
                     Row Gap
-                    <div class="exercise-button active" onclick="clicked(event,'columnGap')">Align self center
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'columnGap')">Align self flex end
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'columnGap')">Align self flex start
-                    </div>
+                    <button class="exercise-button active" onclick="clicked(event,'rowGap','0')">row gap 0rem
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'rowGap','1rem')">row gap 1rem
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'rowGap','2rem')">row gap 2rem
+                    </button>
                 </div>
                 <div class="exercise-buttons-container">
                     Column Gap
-                    <div class="exercise-button active" onclick="clicked(event,'rowGap')">Align self center
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'rowGap')">Align self flex end
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'rowGap')">Align self flex start
-                    </div>
+                    <button class="exercise-button active" onclick="clicked(event,'columnGap','0')">column gap 0rem
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'columnGap','1rem')">column gap 1rem
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'columnGap','2rem')">column gap 2rem
+                    </button>
                 </div>
             </div>
             <div class="grid-gap-advanced display-container">
@@ -221,21 +220,21 @@
                 <div class="exercise-title">Grid Alignment</div>
                 <div class="exercise-buttons-container">
                     Justify Content
-                    <div class="exercise-button active" onclick="clicked(event,'justifyContent')">Align self center
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'justifyContent')">Align self flex end
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'justifyContent')">Align self flex start
-                    </div>
+                    <button class="exercise-button active" onclick="clicked(event,'justifyContent')">Align self center
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'justifyContent')">Align self flex end
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'justifyContent')">Align self flex start
+                    </button>
                 </div>
                 <div class="exercise-buttons-container">
                     Align Items
-                    <div class="exercise-button active" onclick="clicked(event,'alignItems')">Align self center
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'alignItems')">Align self flex end
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'alignItems')">Align self flex start
-                    </div>
+                    <button class="exercise-button active" onclick="clicked(event,'alignItems')">Align self center
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'alignItems')">Align self flex end
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'alignItems')">Align self flex start
+                    </button>
                 </div>
             </div>
             <div class="grid-alignment display-container">
@@ -255,21 +254,21 @@
                 <div class="exercise-title">Self Alignment</div>
                 <div class="exercise-buttons-container">
                     Justify Content
-                    <div class="exercise-button active" onclick="clicked(event,'justifySelf')">Align self center
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'justifySelf')">Align self flex end
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'justifySelf')">Align self flex start
-                    </div>
+                    <button class="exercise-button active" onclick="clicked(event,'justifySelf')">Align self center
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'justifySelf')">Align self flex end
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'justifySelf')">Align self flex start
+                    </button>
                 </div>
                 <div class="exercise-buttons-container">
                     Align Items
-                    <div class="exercise-button active" onclick="clicked(event,'alignSelf')">Align self center
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'alignSelf')">Align self flex end
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'alignSelf')">Align self flex start
-                    </div>
+                    <button class="exercise-button active" onclick="clicked(event,'alignSelf')">Align self center
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'alignSelf')">Align self flex end
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'alignSelf')">Align self flex start
+                    </button>
                 </div>
                 
             </div><div class="self-alignment display-container">
@@ -287,14 +286,14 @@
             <div class="left-column">
                 <div class="exercise-title">Template Areas</div>
                 <div class="exercise-buttons-container">
-                    <div class="exercise-button active" onclick="clicked(event,'gridTemplateAreas')">Align self
+                    <button class="exercise-button active" onclick="clicked(event,'gridTemplateAreas')">Align self
                         center
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'gridTemplateAreas')">Align self flex end
-                    </div>
-                    <div class="exercise-button" onclick="clicked(event,'gridTemplateAreas')">Align self flex
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'gridTemplateAreas')">Align self flex end
+                    </button>
+                    <button class="exercise-button" onclick="clicked(event,'gridTemplateAreas')">Align self flex
                         start
-                    </div>
+                    </button>
                 </div>
             </div>
             <div class="template-areas display-container">

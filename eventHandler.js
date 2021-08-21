@@ -6,8 +6,11 @@ function clicked(e, property, value, doOnChild = false) {
 
   if (target.classList.contains("active")) return;
 
-  if (doOnChild) gridBox.firstChild.style[property] = value;
-  else gridBox.style[property] = value;
+  if (doOnChild) {
+    gridBox.firstElementChild.style[property] = value;
+  } else {
+    gridBox.style[property] = value;
+  }
 
   for (var i = 0; i < target.parentElement.children.length; i++) {
     target.parentElement.children[i].classList.remove("active");

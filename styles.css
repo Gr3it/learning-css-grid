@@ -12,6 +12,10 @@
   font-family: "Poppins";
 }
 
+:focus {
+  outline: none;
+}
+
 .grid-container {
   margin: 5rem 10rem;
   display: flex;
@@ -86,6 +90,7 @@
   border-radius: 0.25rem;
   transition: all 0.2s;
   cursor: pointer;
+  border: none;
 }
 
 .grid-element {
@@ -114,11 +119,16 @@
   background-color: #cebfe7;
 }
 
-.exercise-button:hover:not(.active) {
+.exercise-button:hover:not(.active),
+.exercise-button:focus:not(.active) {
   transform: translate(1.5rem);
   color: var(--MainColor);
   font-weight: bold;
   background-color: var(--MainColorTransparent);
+}
+
+.active:focus {
+  box-shadow: 0 0 0 2px var(--MainColor);
 }
 
 .active {
@@ -129,12 +139,19 @@
   background-color: var(--MainColorTransparent);
 }
 
-.display-container:not(.grid-template-columns) {
+.display-container:not(.grid-template-columns):not(.grid-auto-columns) {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.grid-template-columns {
-  grid-template-columns: 200px 200px;
+.grid-auto-columns > *:nth-child(2) {
+  grid-column: 2;
+}
+
+.grid-gap {
+  gap: 0;
+}
+.grid-gap-advanced {
+  gap: 0;
 }
 
 @media screen and (max-width: 1600px) {
